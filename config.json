@@ -1,0 +1,14 @@
+{
+    "database": {
+        "server": "localhost",
+        "user": "postgres",
+        "password": "Gjet84Wh95ds",
+        "database": "postgres",
+        "options": {
+            "encrypt": true
+        }
+    },
+    "security": {
+        "key": "CHAVE_SEGURANCA"
+    }
+}
