@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thunderbolts</title>
+
+    <link rel="stylesheet" href="../css/singIn.css"/>
+</head>
+<body>
+    <div class="container">
+        <form  class="form-signIn" method="POST" action="/login">
+            <img src="../images/Logo.png" alt="Thunderbolts Logo"/>
+
+            <input 
+                type="email"
+                placeholder="Email"
+                id="email"
+                name="email"
+
+                required
+            />
+
+            <input
+                type="password"
+                placeholder="Senha"
+                id="password"
+                name="password"
+
+                required
+            />
+
+            <button type="submit" >Entrar</button>
+            <hr>
+            <a href="/cadastro">Criar Conta</a>
+        </form>
+    </div>
+</body>
+</html>
