@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="formLogin" method="post" onsubmit="autenticar(); return false;">
+        <form  class="form-signIn" method="POST" action="/routes/singin.js">
             <img src="../images/Logo.png" alt="Thunderbolts Logo"/>
 
             <input 
@@ -32,25 +32,3 @@
     </div>
 </body>
 </html>
-
-<script>
-    function autenticar() {
-        var dados = $('#formLogin').serialize();
-
-        $.ajax({
-            url: "login",
-            type: 'POST',
-            data: dados
-        })
-            .done(function (resposta) {
-                //window.location.href = 'grafico.html'; - url da pagina que deve ser renderisada apos o login
-            })
-            .fail(function (data) {
-                console.log(data);
-                $('#span_mensagem').html(data.responseJSON.mensagem);
-            });
-
-        return false;
-    }
-
-</script>
