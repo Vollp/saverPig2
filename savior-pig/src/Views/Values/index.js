@@ -34,7 +34,7 @@ import Logo from '../../img/Logo.png';
 
         const { salario, economia } = this.state;
 
-        if(!salario || economia){
+        if(!salario || !economia){
             this.setState({ error: 'Preencha todos os campos para continuar!'});
         }
     }
