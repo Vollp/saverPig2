@@ -8,6 +8,7 @@ export const Container = styled.div`
     background: linear-gradient(to bottom, #33ccff 0%, #ccccff 100%);
 `;
 
+
 export const Form = styled.form`
     width: 330px;
     background: #eee;
@@ -16,16 +17,18 @@ export const Form = styled.form`
     flex-direction: column;
     align-items: center;
 
+
     img{
         width: 200px;
         margin: 10px 0 45px;
         position: relative;
-        bottom: 20px;
+        bottom: 20px; 
     }
 
     p{
         color: #ff3333;
         margin-bottom: 15px;
+        border: 1px solid #ff3333;
         padding: 10px;
         width: 100%;
         text-align: center;
@@ -38,7 +41,9 @@ export const Form = styled.form`
         color: #777;
         font-size: 15px;
         width: 100%;
-        border: 1px solid  #ddd; 
+        border: 1px solid #ddd;
+        postion: relative;
+        bottom: 25px;
         &::placeholder{
             color: #999;
         }
@@ -58,13 +63,20 @@ export const Form = styled.form`
         margin: 20px 0;
         border: none;
         border-bottom: 1px solid #cdcdcd;
-        width:100%;
+        width: 100%;
     }
 
     a{
         font-size: 16px;
-        font-weight: bold;
-        color: #fc6963;
+        font-weigth: bold;
+        color:#fc6963;
         text-decoration: none;
+    }
+
+    label{
+        color: #3399ff;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
     }
 `;

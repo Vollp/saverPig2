@@ -8,7 +8,9 @@ import SignIn from './Views/SignIn';
 
 import SignUp from './Views/SingUp'
 
-const PrivateRoute = ({ Component: Component, ...rest }) =>(
+import Values from './Views/Values'
+
+const PrivateRoute = ({ component: Component, ...rest }) =>(
     <Route
         {...rest}
         render={props =>
@@ -24,9 +26,11 @@ const PrivateRoute = ({ Component: Component, ...rest }) =>(
 const Routes = () =>(
     <BrowserRouter>
         <Switch>
-        <PrivateRoute path='/app' component={() => <h1>App</h1>} />
+        <PrivateRoute exact path='/app' component={() => <h1>App</h1>}/>
             <Route path='/SignIn' component={SignIn}/>
             <Route path='/SignUp' component={SignUp}/>
+            <Route path='/Valores' component={Values}/>
+
 
         </Switch>
     </BrowserRouter>

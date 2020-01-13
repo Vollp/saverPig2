@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body, html {
-    background: linear-gradient(to bottom, #33ccff 0%, #ccccff 100%);
+    // background: linear-gradient(to bottom, #33ccff 0%, #ccccff 100%);
     background-repeat: no-repeat;
     font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     text-rendering: optimizeLegibility !important;
