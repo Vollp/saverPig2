@@ -1,6 +1,6 @@
 const Database = require('../utils/Database');
 
-class User{
+class User {
     async register(nome, sobrenome, email, senha, confirmSenha){
         if(nome != null && sobrenome != null && email != null && senha != null && confirmSenha != null) {
             if(senha != confirmSenha) {
@@ -12,8 +12,6 @@ class User{
             
             try{
                 const response = await Database.query(`insert into portador(nome, ultimo_nome, email, senha) values('${nome}', '${sobrenome}', '${email}', '${senha}') returning *`);
-                
-                console.log(response)
 
                 return response;
             } catch(error) {

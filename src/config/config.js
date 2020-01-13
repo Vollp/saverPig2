@@ -1,5 +1,5 @@
 module.exports = {
-    port: 3001,
+    port: 3002,
     poolSettings: {
       host: "saviorpig.c4ctnbkjnd6p.us-east-1.rds.amazonaws.com",
       user: "postgres",

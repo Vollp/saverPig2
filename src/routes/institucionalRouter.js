@@ -32,13 +32,11 @@ router.post('/cadastro', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-    console.log(req.body)
-
     const { email, password } = req.body;
 
     const response = await User.login(email, password);
 
-    response == 200 ? res.redirect('https://google.com').status(200).json(response) : res.status(400).json(response);
+    response == 200 ? res.redirect('http://localhost:3001').status(200).json(response) : res.status(400).json(response);
 })
 
 module.exports = router;
